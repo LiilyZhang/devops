@@ -983,7 +983,7 @@ export EXCHANGE_INTERNAL_CERT=${HZN_MGMT_HUB_CERT:-N/A}
 # Download and process templates from open-horizon/devops
 printf "${CYAN}------- Downloading template files...${NC}\n"
 getUrlFile $OH_DEVOPS_REPO/mgmt-hub/docker-compose.yml docker-compose.yml
-getUrlFile $OH_DEVOPS_REPO/mgmt-hub/docker-compose-agbot2.yml docker-compose-agbot2.yml
+getUrlFile https://raw.githubusercontent.com/LiilyZhang/devops/refs/heads/zhangl/multiAgbot/mgmt-hub/docker-compose-agbot2.yml docker-compose-agbot2.yml
 getUrlFile $OH_DEVOPS_REPO/mgmt-hub/exchange-tmpl.json $TMP_DIR/exchange-tmpl.json # [DEPRECATED] in v2.124.0+
 getUrlFile $OH_DEVOPS_REPO/mgmt-hub/agbot-tmpl.json $TMP_DIR/agbot-tmpl.json
 getUrlFile $OH_DEVOPS_REPO/mgmt-hub/css-tmpl.conf $TMP_DIR/css-tmpl.conf
