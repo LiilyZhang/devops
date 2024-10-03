@@ -38,5 +38,4 @@ services:
     depends_on:
       - exchange-api
       - css-api
-      - postgres
     
